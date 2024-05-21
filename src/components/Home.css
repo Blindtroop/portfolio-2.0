@@ -1,0 +1,85 @@
+/* TextImageSection.css */
+.text-image-section {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 6rem;
+    padding-left: 90px;
+    padding-top: 90px;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 0rem;
+}
+
+.text-content h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+    margin-top: 60px;
+}
+
+.text-content p {
+    font-size: 20px;
+    color: #000; /* Optional: change text color */
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 800px; /* Optional: add border radius to the image */
+    filter: grayscale(100%); /* Optional: add grayscale filter to the image */
+}
+
+
+@media (max-width: 1371px) and (max-height: 686px) {
+
+    .text-content p {
+        font-size: 15px;
+    }
+
+    .image-content img {
+        max-width: 50%;
+    }
+}
+
+
+    @media only screen and (max-width: 1024px) {
+        .text-image-section {
+            flex-direction: column;
+            padding: 1rem;
+            margin: 0 1rem;
+            gap: 0rem;
+        }
+    
+        .text-content {
+            padding-top: 90px;
+            text-align: center; /* Center align text on smaller screens */
+        }
+    
+        .text-content h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+    
+        .text-content p {
+            margin-top: 0;
+            font-size: 15px;
+        }
+    
+        .image-content img {
+            max-width: 70%;
+            border-radius: 5%; /* Optional: adjust border radius */
+            top:-900px
+        }
+}

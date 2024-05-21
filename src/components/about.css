@@ -1,0 +1,113 @@
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #FBEAEB;
+    margin-bottom: 160px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.about-image {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.about-image img {
+    max-width: 100%;
+}
+
+.about-text {
+    color: black;
+    padding-bottom: 20px;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative; /* Added to use absolute positioning for the underline */
+}
+
+.about-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; /* Adjust as needed */
+    left: 0;
+    width: 75%; /* Three-quarters of the width */
+    height: 2px; /* Adjust as needed */
+    background-color: #2F3C7E; /* Adjust the color as needed */
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2F3C7E;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.contact-btn:hover {
+    background-color: #FBEAEB;
+    color: #2F3C7E;
+    border: 1px solid #2F3C7E;
+}
+
+@media (max-width: 1371px) and (max-height: 686px) {
+    .about-section {
+        margin-bottom: 100px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+    }
+
+    .about-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .about-content {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .about-text h2 {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+    }
+
+    .contact-btn {
+        margin-top: 20px;
+    }
+}

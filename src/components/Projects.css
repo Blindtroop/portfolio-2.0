@@ -1,0 +1,18 @@
+/* src/components/Projects.css */
+.projects-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 0;
+    background-color: #2F3C7E; /* Adjust as needed */
+    position: relative;
+    top: -50px; /* Adjust as needed to overlap into the previous section */
+}
+
+@media only screen and (max-width: 1024px) {
+    .projects-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
