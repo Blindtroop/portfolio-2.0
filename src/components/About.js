@@ -1,10 +1,17 @@
 import React from 'react';
 import profilePic from './assets/lance2.png'; // Import your profile picture from the assets folder
 import './about.css'; // Import your CSS file
+import { Link, animateScroll as scroll } from 'react-scroll'; 
 
 function About() {
+    const scrollToContact = () => {
+        scroll.scrollToBottom({
+            duration: 500,
+            smooth: 'easeInOutQuad',
+        });
+    };
     return (
-        <section className="about-section">
+        <section className="about-section" id='about'>
             <div className="about-content">
                 <div className="about-image">
                     <img src={profilePic} alt="Profile" />
@@ -32,8 +39,9 @@ function About() {
                         I am always open to new opportunities and collaborations. Feel free
                         to reach out.
                     </p>
-                    <button className="contact-btn">Contact Me</button>
-                </div>
+                    <button
+                className="contact-btn"
+                onClick={scrollToContact}>Contact Me</button>                </div>
             </div>
         </section>
     );

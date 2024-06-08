@@ -41,7 +41,7 @@ function TextImageSection() {
     }, [text, index, isDeleting, texts, currentIndex]);
 
     return (
-        <section className="text-image-section">
+        <section className="text-image-section" id='home'>
             <div className="text-content">
                 <h2>Hi, I am Lance Kaluhi</h2>
                 <p>

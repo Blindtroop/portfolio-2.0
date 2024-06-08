@@ -1,8 +1,8 @@
 // src/components/ProjectCard.js
 import React from 'react';
-import './ProjectCard.css'; // Import the CSS file for styling
+import './ProjectCard.css';
 
-function ProjectCard({ image, title, description }) {
+function ProjectCard({ image, title, description, link }) {
     return (
         <div className="project-card">
             <div className="card-image">
@@ -11,7 +11,7 @@ function ProjectCard({ image, title, description }) {
             <div className="card-text">
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <button className="view-project">View Project</button>
+                <a href={link} className="view-project">View Project</a>
             </div>
         </div>
     );

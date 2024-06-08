@@ -78,6 +78,14 @@
     border: 1px solid #2F3C7E;
 }
 
+.projects h2{
+    font-size: 2rem;
+    color: #2F3C7E;
+    margin-top: 60px;
+    border-bottom: 2px solid #2F3C7E;
+
+}
+
 @media (max-width: 1371px) and (max-height: 686px) {
     .about-section {
         margin-bottom: 100px;

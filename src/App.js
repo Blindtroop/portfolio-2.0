@@ -6,6 +6,8 @@ import React from 'react';
 import MouseFollower from './components/cursor';
 import About from './components/About';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <Home/>
       <About/>
       <Projects/>
+      <Contact/>
+      <Footer/>
       <MouseFollower/>
     </React.Fragment>
     
